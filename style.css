@@ -1,11 +1,11 @@
 /* ===== Variables ===== */
 :root {
-  --color-bg: #faf9f7;
-  --color-white: #ffffff;
-  --color-beige: #f0ece4;
-  --color-dark: #2c2c2c;
-  --color-gray: #7a7a7a;
-  --color-accent: #8b7355;
+  --color-bg: #0f0e0d;
+  --color-white: #fcfaf7;
+  --color-beige: #1f1d1b;
+  --color-dark: #e6e2df;
+  --color-gray: #8c847d;
+  --color-accent: #b59a7d;
   --font-serif: 'Georgia', 'Times New Roman', serif;
   --font-sans: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -238,6 +238,37 @@ footer {
   color: var(--color-gray);
   background: var(--color-white);
 }
+
+/* ===== Lightbox ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox.open { display: flex; }
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem; right: 2rem;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.lightbox-close:hover { opacity: 1; }
 
 /* ===== Burger button ===== */
 .burger {
