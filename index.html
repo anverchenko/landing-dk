@@ -12,7 +12,8 @@
   <nav>
     <a href="#hero" class="nav-logo">Dragon.Kinbaku</a>
     <ul class="nav-links">
-      <li><a href="#gallery">Products</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#catalog">Catalog</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contacts">Contact</a></li>
     </ul>
@@ -56,6 +57,45 @@
 
     </div>
   </section>
+
+  <!-- Catalog -->
+  <section id="catalog" class="fade-in">
+    <p class="section-label">Catalog</p>
+    <h2 class="section-title">Our Products</h2>
+    <div class="catalog-grid">
+
+      <div class="catalog-item" data-modal="product1">
+        <div class="catalog-icon">01</div>
+        <h3 class="catalog-name">Product 1</h3>
+        <p class="catalog-short">Handcrafted rig — description coming soon.</p>
+        <span class="catalog-more">View details →</span>
+      </div>
+
+      <div class="catalog-item" data-modal="product2">
+        <div class="catalog-icon">02</div>
+        <h3 class="catalog-name">Product 2</h3>
+        <p class="catalog-short">Handcrafted rig — description coming soon.</p>
+        <span class="catalog-more">View details →</span>
+      </div>
+
+      <div class="catalog-item" data-modal="product3">
+        <div class="catalog-icon">03</div>
+        <h3 class="catalog-name">Product 3</h3>
+        <p class="catalog-short">Handcrafted rig — description coming soon.</p>
+        <span class="catalog-more">View details →</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product Modals -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-body" id="modalBody"></p>
+    </div>
+  </div>
 
   <!-- About -->
   <section id="about" class="fade-in">
@@ -151,6 +191,39 @@
     // Lightbox for gallery
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
+
+    // Catalog modals
+    const productData = {
+      product1: { title: 'Product 1', body: 'Handcrafted rig. Full description coming soon. Contact us for details.' },
+      product2: { title: 'Product 2', body: 'Handcrafted rig. Full description coming soon. Contact us for details.' },
+      product3: { title: 'Product 3', body: 'Handcrafted rig. Full description coming soon. Contact us for details.' },
+    };
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+
+    document.querySelectorAll('.catalog-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const key = item.dataset.modal;
+        const data = productData[key];
+        if (!data) return;
+        modalTitle.textContent = data.title;
+        modalBody.textContent = data.body;
+        modalOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    document.querySelector('.modal-close').addEventListener('click', () => {
+      modalOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    modalOverlay.addEventListener('click', e => {
+      if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    });
 
     document.querySelectorAll('.gallery-item img').forEach(img => {
       img.style.cursor = 'pointer';
