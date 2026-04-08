@@ -264,6 +264,7 @@ section { padding: 6rem 2rem; }
   overflow-y: auto;
   padding: 1.5rem 2rem 2rem;
   flex: 1;
+  min-height: 0;
 }
 .modal-body {
   color: var(--color-gray);
