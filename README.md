@@ -88,6 +88,11 @@
       - Ergonomic design;
       - Polyurethane ends;
       - The bag is included.
+
+      Після опису -- вставляємо **Зображення:**
+  - Tripode1/Tripode1_01.png
+  - Tripode1/Tripode1_02.png
+
  
 
 
