@@ -203,7 +203,7 @@
     const productData = {
       product1: { title: 'Tripod Ergo Black Pearl', body: 'бу-бу-бу' },
       product2: { title: 'Тринога 1', body: 'бу-бу-бу' },
-      product3: { title: 'Тринога 1', body: `Shibari Rope Suspension Bondage Rig "Ergo tripod"<br><br>Ergo tripod (design with bent legs)<br><br>• Material — aluminum + steel<br>• Weight — about 9.8–11 kg (all together with bag)<br><br>Technical details:<br>We have produced just one of such tripods for this moment, and we tested it successfully. We also got positive feedback from riggers.<br><br>We recommend using ropes around the perimeter between the legs along the floor for more stability. You can hide the ropes under a mat. In our opinion, the construction with the ropes gives much more rigidity to the structure.<br><br>• Due to the bent legs, the total weight is significantly reduced<br>• New bolt connection — faster, no protruding parts<br>• Assembles without disconnecting upper tubes<br>• Powder coating of all parts<br>• Ergonomic design<br>• Polyurethane ends<br>• Bag included<br><br><img src="Tripode1/Tripode1_01.png" class="modal-img" alt="Ergo tripod 1"><img src="Tripode1/Tripode1_02.png" class="modal-img" alt="Ergo tripod 2">` },
+      product3: { title: 'Тринога 1', body: `Shibari Rope Suspension Bondage Rig "Ergo tripod"<br><br><img src="Portfolio/f06_Rig1.jpg" class="modal-img zoomable" alt="Ergo tripod preview"><br>Ergo tripod (design with bent legs)<br><br>• Material — aluminum + steel<br>• Weight — about 9.8–11 kg (all together with bag)<br><br>Technical details:<br>We have produced just one of such tripods for this moment, and we tested it successfully. We also got positive feedback from riggers.<br><br>We recommend using ropes around the perimeter between the legs along the floor for more stability. You can hide the ropes under a mat. In our opinion, the construction with the ropes gives much more rigidity to the structure.<br><br>• Due to the bent legs, the total weight is significantly reduced<br>• New bolt connection — faster, no protruding parts<br>• Assembles without disconnecting upper tubes<br>• Powder coating of all parts<br>• Ergonomic design<br>• Polyurethane ends<br>• Bag included<br><br><img src="Tripode1/Tripode1_01.png" class="modal-img zoomable" alt="Ergo tripod 1"><img src="Tripode1/Tripode1_02.png" class="modal-img zoomable" alt="Ergo tripod 2">` },
     };
     const modalOverlay = document.getElementById('modalOverlay');
     const modalTitle = document.getElementById('modalTitle');
@@ -218,6 +218,15 @@
         modalBody.innerHTML = data.body.replace(/\n/g, '<br>');
         modalOverlay.classList.add('open');
         document.body.style.overflow = 'hidden';
+        // Add zoom on click for images inside modal
+        modalBody.querySelectorAll('.zoomable').forEach(img => {
+          img.style.cursor = 'zoom-in';
+          img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('open');
+          });
+        });
       });
     });
 

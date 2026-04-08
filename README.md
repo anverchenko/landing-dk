@@ -73,6 +73,11 @@
    Shibari Rope Suspension Bondage Rig "Ergo tripod"
    # Розширений опис: 
    Ergo tripod (design with bent legs)
+
+   тут вставляємо **Зображення:**
+  -f06_Rig1.jpg
+  Зображення повинно збільшуватись до оригінального розміру при клікі на ньому
+
       
       - Material - aluminum+steel 
       - Weight - about 9,8-11 kg (all together with bag)
@@ -92,6 +97,7 @@
       Після опису -- вставляємо **Зображення:**
   - Tripode1/Tripode1_01.png
   - Tripode1/Tripode1_02.png
+  Зображення повинно збільшуватись до оригінального розміру при клікі на ньому
 
  
 
