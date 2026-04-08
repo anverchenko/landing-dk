@@ -123,6 +123,7 @@
 - **Опис:** Have a question or want to order a piece? Reach out to us!
 - **Instagram:** @Dragon.Kinbaku → https://www.instagram.com/Dragon.Kinbaku
 - **Email:** Dragon.Kinbaku@gmail.com
+- **Etsy shop:** www.etsy.com/shop/DragonKinbaku
 
 ---
 
