@@ -269,6 +269,13 @@ section { padding: 6rem 2rem; }
   font-size: 0.97rem;
   line-height: 1.8;
 }
+.modal-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
 .modal-footer {
   padding: 1rem 2rem;
   border-top: 1px solid rgba(255,255,255,0.07);
