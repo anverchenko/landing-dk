@@ -5,39 +5,27 @@
 Лендінг-сторінка авторських виробів від Dragon.Kinbaku.
 Мета: представити вироби, розповісти про розміри, характеристики, фічі і дати змогу зв'язатися.
 
+
+
+## Навігація
+
+- Products
+- Gallery
+- About
+- Contact
+
 ---
 
-## Структура сторінки
+## Hero (Головний екран)
 
-### 1. Навігація (Nav)
-- Логотип / назва "Dragon.Kinbaku"
-- Посилання: Вироби, Про нас, Контакти
-- [ ] Зробити `sticky` (липкою при прокрутці)
-- [ ] Додати бургер-меню для мобільних
-
-### 2. Hero (Головний екран)
-- Підзаголовок: "Опис виробів"
-- Заголовок: ""
-- Короткий опис
-- Кнопка "Переглянути роботи"
-- [ ] Додати фонове зображення або відео
+- **Підзаголовок:** Handcrafted Rigs
+- **Заголовок:** Made with Soul
+- **Опис:** Unique handcrafted items — thoughtful, authentic, and full of character.
+- **Кнопка:** Browse Products
 
 
-### 3. Products
+## Gallery
 
-список виробів:
-1. Виріб 1
-2. Виріб 2
-3. Виріб 3
-- 
-тут треба вставити список виробів. клікаючи на виріб- випадає модальне вікно з розширеним описом виробу
-
-
-### 4. Gallery
-- Сітка з постами Instagram (embed)
-## Instagram пости для галереї
-   вставити фото і відео з папки Portfolio. Фото не обрізати!!!!
-   
 - **Підзаголовок:** Portfolio
 - **Заголовок:** Our Works
 - **Зображення:**
@@ -52,57 +40,23 @@
   - FDP 2026_02_14-73.jpg
   - FDPDisco_0267.jpg
 
-
-
-### 5. About (Про мене)
-- Розповідь про майстра
-- [ ] Додати фото майстра
-- [ ] Розширити текст — хто я, чим займаюсь, скільки років досвіду
-
-### 6. Contacts (Контакти)
-- Instagram: Dragon.Kinbaku
-- Email: `Dragon.Kinbaku@gmail.com` 
-- [ ] Опційно: додати Telegram або Viber
-
-### 7. Footer
-- [ ] Оновити рік з 2026 на актуальний
-
 ---
 
-## Стилі та дизайн
+## Products
 
-- Файл: `style.css`
-- [ ] Переглянути кольорову схему (зараз не відомо — потрібно перевірити)
-- [ ] Адаптивність (responsive) для мобільних пристроїв
-- [ ] Анімації при прокрутці (scroll animations) — опційно
+список виробів:
+1. Виріб 1
+2. Виріб 2
+3. Виріб 3
+- 
+тут треба вставити список виробів. клікаючи на виріб- випадає модальне вікно з розширеним описом виробу
 
----
-
-## Що потрібно зробити (пріоритети)
-
-| Пріоритет | Завдання |
-|-----------|----------|
-| 
-| 🔴 Важливо | Додати більше Instagram-постів у галерею |
-| 🟡 Середнє | Додати фото майстра в секцію "Про мене" |
-| 🟡 Середнє | Зробити навігацію sticky |
-| 🟢 Бажано  | Бургер-меню для мобільних |
-| 🟢 Бажано  | Анімації при прокрутці |
-| 🟢 Бажано  | Фонове зображення у Hero |
-
----
-
-## Технічні деталі
-
-- Чистий HTML + CSS (без фреймворків)
-- Instagram embed через офіційний скрипт
-- Мова сайту: англійська (перекласти весь текст англійською!!!!)
 
 ---
 
 Опис виробів (окремі модальні вікна):
 1. Виріб 1
-   Назва: Тринога 1
+   Назва: Tripod Ergo Black Pearl
    Короткий опис: ля-ля-ля
    Розширений опис: бу-бу-бу
 
@@ -115,8 +69,73 @@
 
 3. Виріб 3
 Назва: Тринога 1
-   Короткий опис: ля-ля-ля
-   Розширений опис: бу-бу-бу
+   # Короткий опис: 
+   Shibari Rope Suspension Bondage Rig "Ergo tripod"
+   # Розширений опис: 
+   Ergo tripod (design with bent legs)
+      
+      - Material - aluminum+steel 
+      - Weight - about 9,8-11 kg (all together with bag)
+
+      Technical details
+      We have produced just one of such tripods for this moment, and we tested it successfully. We also got positive feedback from riggers.
+
+      We recommend using ropes around the perimeter between the legs along the floor for more stability, but you can use them not. You can hide the ropes under a mat, for example. In our opinion, the construction with the ropes gives much more rigidity to the structure.
+      - Due to the bent legs, the total weight of the construction is significantly reduced;
+      - A new way to connect the legs - it is much faster and uses a bolt connection (see photo), and there are no protruding parts of metalware;
+      - The design assembles without disconnecting the upper tubes so that you can assemble/disassemble it faster (even by beginners);
+      - Powder coating of all parts;
+      - Ergonomic design;
+      - Polyurethane ends;
+      - The bag is included.
  
+
+
+
+## About (Про майстра)
+
+- **Підзаголовок:** About Us
+- **Заголовок:** The Master
+- **Текст:**
+  - I am Dragon.Kinbaku — a craftsman dedicated to creating unique handcrafted rigs that merge traditional rope art with modern precision engineering.
+  - Each rig is made by hand, with careful attention to balance, aesthetics, and function. I work with carefully selected materials to ensure every piece is both beautiful and reliable.
+  - Years of experience in kinbaku and rigging have shaped my approach: every detail matters, every knot has purpose.
+
+---
+
+## Contacts (Контакти)
+
+- **Підзаголовок:** Get in Touch
+- **Заголовок:** Contact
+- **Опис:** Have a question or want to order a piece? Reach out to us!
+- **Instagram:** @Dragon.Kinbaku → https://www.instagram.com/Dragon.Kinbaku
+- **Email:** Dragon.Kinbaku@gmail.com
+
+---
+
+## Footer
+
+© 2026 Dragon.Kinbaku. All rights reserved.
+
+
+
+
+## Стилі та дизайн
+
+- Файл: `style.css`
+- [ ] Переглянути кольорову схему (зараз не відомо — потрібно перевірити)
+- [ ] Адаптивність (responsive) для мобільних пристроїв
+- [ ] Анімації при прокрутці (scroll animations) — опційно
+
+---
+
+
+
+---
+
+## Технічні деталі
+
+
+
 
 

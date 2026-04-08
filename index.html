@@ -46,7 +46,7 @@
 
       <div class="catalog-item" data-modal="product1">
         <div class="catalog-icon">01</div>
-        <h3 class="catalog-name">Тринога 1</h3>
+        <h3 class="catalog-name">Tripod Ergo Black Pearl</h3>
         <p class="catalog-short">ля-ля-ля</p>
         <span class="catalog-more">View details →</span>
       </div>
@@ -61,7 +61,7 @@
       <div class="catalog-item" data-modal="product3">
         <div class="catalog-icon">03</div>
         <h3 class="catalog-name">Тринога 1</h3>
-        <p class="catalog-short">ля-ля-ля</p>
+        <p class="catalog-short">Shibari Rope Suspension Bondage Rig "Ergo tripod"</p>
         <span class="catalog-more">View details →</span>
       </div>
 
@@ -194,9 +194,9 @@
 
     // Catalog modals
     const productData = {
-      product1: { title: 'Тринога 1', body: 'бу-бу-бу' },
+      product1: { title: 'Tripod Ergo Black Pearl', body: 'бу-бу-бу' },
       product2: { title: 'Тринога 1', body: 'бу-бу-бу' },
-      product3: { title: 'Тринога 1', body: 'бу-бу-бу' },
+      product3: { title: 'Тринога 1', body: `Shibari Rope Suspension Bondage Rig "Ergo tripod"\n\nErgo tripod (design with bent legs)\n\n• Material — aluminum + steel\n• Weight — about 9.8–11 kg (all together with bag)\n\nTechnical details:\nWe have produced just one of such tripods for this moment, and we tested it successfully. We also got positive feedback from riggers.\n\nWe recommend using ropes around the perimeter between the legs along the floor for more stability. You can hide the ropes under a mat. In our opinion, the construction with the ropes gives much more rigidity to the structure.\n\n• Due to the bent legs, the total weight is significantly reduced\n• New bolt connection — faster, no protruding parts\n• Assembles without disconnecting upper tubes\n• Powder coating of all parts\n• Ergonomic design\n• Polyurethane ends\n• Bag included` },
     };
     const modalOverlay = document.getElementById('modalOverlay');
     const modalTitle = document.getElementById('modalTitle');
@@ -208,7 +208,7 @@
         const data = productData[key];
         if (!data) return;
         modalTitle.textContent = data.title;
-        modalBody.textContent = data.body;
+        modalBody.innerHTML = data.body.replace(/\n/g, '<br>');
         modalOverlay.classList.add('open');
         document.body.style.overflow = 'hidden';
       });
