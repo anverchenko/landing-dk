@@ -258,9 +258,11 @@ section { padding: 6rem 2rem; }
   color: var(--color-dark);
 }
 .modal-scroll {
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   padding: 1.5rem 2rem 2rem;
-  max-height: 55vh;
+  max-height: 50vh;
+  height: 50vh;
 }
 .modal-body {
   color: var(--color-gray);
