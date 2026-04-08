@@ -12,8 +12,8 @@
   <nav>
     <a href="#hero" class="nav-logo">Dragon.Kinbaku</a>
     <ul class="nav-links">
+      <li><a href="#catalog">Products</a></li>
       <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#catalog">Catalog</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contacts">Contact</a></li>
     </ul>
@@ -38,6 +38,36 @@
     </div>
   </section>
 
+  <!-- Products (Catalog) -->
+  <section id="catalog" class="fade-in">
+    <p class="section-label">Products</p>
+    <h2 class="section-title">Our Products</h2>
+    <div class="catalog-grid">
+
+      <div class="catalog-item" data-modal="product1">
+        <div class="catalog-icon">01</div>
+        <h3 class="catalog-name">Тринога 1</h3>
+        <p class="catalog-short">ля-ля-ля</p>
+        <span class="catalog-more">View details →</span>
+      </div>
+
+      <div class="catalog-item" data-modal="product2">
+        <div class="catalog-icon">02</div>
+        <h3 class="catalog-name">Тринога 1</h3>
+        <p class="catalog-short">ля-ля-ля</p>
+        <span class="catalog-more">View details →</span>
+      </div>
+
+      <div class="catalog-item" data-modal="product3">
+        <div class="catalog-icon">03</div>
+        <h3 class="catalog-name">Тринога 1</h3>
+        <p class="catalog-short">ля-ля-ля</p>
+        <span class="catalog-more">View details →</span>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Gallery -->
   <section id="gallery" class="fade-in">
     <p class="section-label">Portfolio</p>
@@ -54,36 +84,6 @@
       <div class="gallery-item"><img src="Portfolio/f08_Rig1.jpg" alt="Dragon.Kinbaku Rig 8" /></div>
       <div class="gallery-item"><img src="Portfolio/FDP 2026_02_14-73.jpg" alt="Dragon.Kinbaku Rig 9" /></div>
       <div class="gallery-item"><img src="Portfolio/FDPDisco_0267.jpg" alt="Dragon.Kinbaku Rig 10" /></div>
-
-    </div>
-  </section>
-
-  <!-- Catalog -->
-  <section id="catalog" class="fade-in">
-    <p class="section-label">Catalog</p>
-    <h2 class="section-title">Our Products</h2>
-    <div class="catalog-grid">
-
-      <div class="catalog-item" data-modal="product1">
-        <div class="catalog-icon">01</div>
-        <h3 class="catalog-name">Product 1</h3>
-        <p class="catalog-short">Handcrafted rig — description coming soon.</p>
-        <span class="catalog-more">View details →</span>
-      </div>
-
-      <div class="catalog-item" data-modal="product2">
-        <div class="catalog-icon">02</div>
-        <h3 class="catalog-name">Product 2</h3>
-        <p class="catalog-short">Handcrafted rig — description coming soon.</p>
-        <span class="catalog-more">View details →</span>
-      </div>
-
-      <div class="catalog-item" data-modal="product3">
-        <div class="catalog-icon">03</div>
-        <h3 class="catalog-name">Product 3</h3>
-        <p class="catalog-short">Handcrafted rig — description coming soon.</p>
-        <span class="catalog-more">View details →</span>
-      </div>
 
     </div>
   </section>
@@ -194,9 +194,9 @@
 
     // Catalog modals
     const productData = {
-      product1: { title: 'Product 1', body: 'Handcrafted rig. Full description coming soon. Contact us for details.' },
-      product2: { title: 'Product 2', body: 'Handcrafted rig. Full description coming soon. Contact us for details.' },
-      product3: { title: 'Product 3', body: 'Handcrafted rig. Full description coming soon. Contact us for details.' },
+      product1: { title: 'Тринога 1', body: 'бу-бу-бу' },
+      product2: { title: 'Тринога 1', body: 'бу-бу-бу' },
+      product3: { title: 'Тринога 1', body: 'бу-бу-бу' },
     };
     const modalOverlay = document.getElementById('modalOverlay');
     const modalTitle = document.getElementById('modalTitle');
