@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dragon.Kinbaku — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Analytics GA4 — replace G-XXXXXXXXXX with your Measurement ID from analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
 
@@ -107,20 +115,11 @@
   <!-- About -->
   <section id="about" class="fade-in">
     <p class="section-label">About Us</p>
-    <h2 class="section-title">The Master</h2>
+    <h2 class="section-title">Dragon.Kinbaku Team</h2>
     <div class="about-inner">
-      <!-- Replace src with real photo when available -->
-      <div class="about-photo-wrap">
-        <img src="" alt="Dragon.Kinbaku master" class="about-photo" id="masterPhoto" />
-        <div class="about-photo-placeholder" id="masterPlaceholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-          </svg>
-        </div>
-      </div>
-      <p>I am Dragon.Kinbaku — a craftsman dedicated to creating unique handcrafted rigs that merge traditional rope art with modern precision engineering.</p>
-      <p>Each rig is made by hand, with careful attention to balance, aesthetics, and function. I work with carefully selected materials to ensure every piece is both beautiful and reliable.</p>
-      <p>Years of experience in kinbaku and rigging have shaped my approach: every detail matters, every knot has purpose.</p>
+      <p>We are Dragon.Kinbaku — a team of craftsmen dedicated to creating unique handcrafted rigs that merge traditional rope art with modern precision engineering.</p>
+      <p>Each rig is made by hand, with careful attention to balance, aesthetics, and function. We work with carefully selected materials to ensure every piece is both beautiful and reliable.</p>
+      <p>Years of experience in kinbaku and rigging have shaped our approach: every detail matters, every knot has purpose.</p>
     </div>
   </section>
 
@@ -198,7 +197,7 @@
           entry.target.classList.add('visible');
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
