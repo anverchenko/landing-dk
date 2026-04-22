@@ -32,11 +32,8 @@
   - f1_Rig1.jpg
   - f02_Rig1.jpg
   - f03_Rig1.jpg
-  - f04_Rig1.jpg
   - f05_Rig1.jpg
-  - f06_Rig1.jpg
-  - f07_Rig1.jpg
-  - f08_Rig1.jpg
+
   - FDP 2026_02_14-73.jpg
   - FDPDisco_0267.jpg
 
@@ -64,7 +61,7 @@
    Ergo tripod (design with bent legs)
 
    тут вставляємо **Зображення:**
-  -f06_Rig1.jpg
+  -f03_Rig1.jpg
   Зображення повинно збільшуватись до оригінального розміру при клікі на ньому
 
       
@@ -88,6 +85,8 @@
   - Tripode1/Tripode1_02.png
   Зображення повинні збільшуватись до оригінального розміру при клікі на ньому
 
+  Далі хочу вставити pdf-файл  "Ergo Tripod Dragon.Kinbaku 2026_04_13.pdf". Файл має бути джоступним для перегляду і має бути можливість завантажити його
+
 2. Виріб 2
 Назва: Тринога 1
    Короткий опис: ля-ля-ля
@@ -108,11 +107,13 @@
 ## About (Про майстра)
 
 - **Підзаголовок:** About Us
-- **Заголовок:** The Master
+- **Заголовок:** Dragon.Kinbaku Team
 - **Текст:**
-  - I am Dragon.Kinbaku — a craftsman dedicated to creating unique handcrafted rigs that merge traditional rope art with modern precision engineering.
+  - We are Dragon.Kinbaku — a craftsman dedicated to creating unique handcrafted rigs that merge traditional rope art with modern precision engineering.
   - Each rig is made by hand, with careful attention to balance, aesthetics, and function. I work with carefully selected materials to ensure every piece is both beautiful and reliable.
   - Years of experience in kinbaku and rigging have shaped my approach: every detail matters, every knot has purpose.
+
+  
 
 ---
 
@@ -148,9 +149,16 @@
 ---
 
 ## Технічні деталі
-- для модальних вікон -- реалізувати прокрутку тексту і кнопку, щоб закрити
+- для модальних вікон -- реалізувати прокрутку тексту і кнопку, щоб закри
 
+::TO DO::
 
-
-
+Поточні помилки і задачі (коли реалізуєш, помічай закресленим шрифтом!!!):
+1. Пропав перехід на Gallary (в мобільній версії)
+2. Реалізуй можливість збору статистики по сайту (кількість кліків, заходів, і таке інше)
+3. На мобільній версії, під час прокрутки сторінки, після блоку Products велмкмй чорний пустий масив. Його треба прибрати
+4. Перероби блок About -- потрібен опис від імені команди, а не від одиничної особи. Додай також інформацію, що ми виготовляємо рами з 2019 року
+5. убрати відео з блоку Hero
+6. обновити список фото в Gallary
+7. обновити фото в описі Триноги1
 
