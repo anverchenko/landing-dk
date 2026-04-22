@@ -30,9 +30,8 @@
 - **Заголовок:** Our Works
 - **Зображення:**
   - f1_Rig1.jpg
-  - f02_Rig1.jpg
-  - f03_Rig1.jpg
   - f05_Rig1.jpg
+  - Tripode_Tan.png 
 
   - FDP 2026_02_14-73.jpg
   - FDPDisco_0267.jpg
@@ -84,8 +83,9 @@
 вставляємо **Зображення:**
       Ergo Tripod Dragon.Kinbaku 2026_04_13_1_Dimensions of the tripod.jpg
       Ergo Tripod Dragon.Kinbaku 2026_04_13_4_Installation.jpg
-      Ergo Tripod Dragon.Kinbaku 2026_04_13_3_Assembling2.jpg
+      
       Ergo Tripod Dragon.Kinbaku 2026_04_13_2_Assembling1.jpg
+      Ergo Tripod Dragon.Kinbaku 2026_04_13_3_Assembling2.jpg
   Зображення повинно збільшуватись до оригінального розміру при клікі на ньому
 
 
