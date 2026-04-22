@@ -12,7 +12,7 @@
 
 /* ===== Reset ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
 body {
   background: var(--color-bg);
   color: var(--color-dark);
@@ -215,8 +215,8 @@ section { padding: 6rem 2rem; }
   background: #1a1917;
   border: 1px solid rgba(255,255,255,0.1);
   padding: 0;
-  max-width: 540px;
-  width: 90%;
+  max-width: min(95vw, 1100px);
+  width: 95%;
   position: relative;
 }
 .modal-header {
@@ -246,11 +246,10 @@ section { padding: 6rem 2rem; }
   color: var(--color-dark);
 }
 .modal-scroll {
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 1.5rem 2rem 2rem;
-  max-height: 50vh;
-  height: 50vh;
+  max-height: calc(85vh - 140px);
 }
 .modal-body {
   color: var(--color-gray);
@@ -410,12 +409,13 @@ footer {
 .burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* ===== Scroll animations ===== */
-.fade-in {
+.fade-in { opacity: 1; }
+.fade-in > * {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
-.fade-in.visible {
+.fade-in.visible > * {
   opacity: 1;
   transform: translateY(0);
 }
