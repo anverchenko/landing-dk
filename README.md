@@ -81,9 +81,23 @@
 
 
 вставляємо **Зображення:**
+
+      "Tripod bag.jpg"
+
+      Tripode_details1.jpg 
+      Tripode_details2.jpg 
+      Tripode_details3.jpg 
+      Tripode_details4.jpg 
+      Tripode_details5.jpg 
+      Tripode_details6.jpg 
+      Tripode_details7.jpg 
+      Tripode_details8.jpg 
+
+"Technical Documentation:"
+
       Ergo Tripod Dragon.Kinbaku 2026_04_13_1_Dimensions of the tripod.jpg
-      Ergo Tripod Dragon.Kinbaku 2026_04_13_4_Installation.jpg
-      
+      Ergo Tripod Dragon.Kinbaku 2026_04_13_4_Installation1.jpg
+      Ergo Tripod Dragon.Kinbaku 2026_04_13_4_Installation2.jpg
       Ergo Tripod Dragon.Kinbaku 2026_04_13_2_Assembling1.jpg
       Ergo Tripod Dragon.Kinbaku 2026_04_13_3_Assembling2.jpg
   Зображення повинно збільшуватись до оригінального розміру при клікі на ньому
@@ -161,3 +175,4 @@
 11. ~~В мобільній версії, при входження в модальне вікно "Виріб1"-- одразу йде завантаження pdf-файлу! Портрібно, щоб файл завантажувався лише коли натискаємо кнопку "Download pdf"~~
 12. ~~В описі Виробу1 я прибрав завантаження деяких зображень, але ти все рівно їх вантажиш!~~
 13. ~~хОЧУ тепер, щоб "Виріб1" відкривався в окремому вікні (назва посилання https://dragon.kinbaku.in.ua/Tripode1)~~
+14. Я обновив всі файли в папці POrtfolio. Загрузи заново
