@@ -169,6 +169,9 @@ section { padding: 6rem 2rem; }
   cursor: pointer;
   transition: border-color 0.3s, transform 0.3s;
   text-align: center;
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 .catalog-item:hover {
   border-color: var(--color-accent);
