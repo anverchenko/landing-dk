@@ -30,7 +30,7 @@
 - **Заголовок:** Our Works
 - **Зображення:**
   - f1_Rig1.jpg
-  - f05_Rig1.jpg
+  
   - Tripode_Tan.png 
 
   - FDP 2026_02_14-73.jpg
