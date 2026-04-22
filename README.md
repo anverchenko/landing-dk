@@ -81,8 +81,15 @@
       - The bag is included.
 
 
+вставляємо **Зображення:**
+      Ergo Tripod Dragon.Kinbaku 2026_04_13_1_Dimensions of the tripod.png
+      Ergo Tripod Dragon.Kinbaku 2026_04_13_4_Installation.png
+      Ergo Tripod Dragon.Kinbaku 2026_04_13_3_Assembling2.png
+      Ergo Tripod Dragon.Kinbaku 2026_04_13_2_Assembling1.png
+  Зображення повинно збільшуватись до оригінального розміру при клікі на ньому
 
-  Далі хочу вставити pdf-файл  "Ergo Tripod Dragon.Kinbaku 2026_04_13.pdf". Файл має бути джоступним для перегляду і має бути можливість завантажити його
+
+  Далі хочу вставити кнопку "Download Technical Documentation",  яка завантажує pdf-файл   "Ergo Tripod Dragon.Kinbaku 2026_04_13.pdf". 
 
 
   
