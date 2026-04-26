@@ -96,6 +96,7 @@
       transition: opacity 0.2s;
     }
     .download-btn:hover { opacity: 0.8; }
+    .product-page .main-gallery { max-width: 100%; margin: 0 0 2rem; }
   </style>
 </head>
 <body style="background: var(--color-bg);">
@@ -121,7 +122,26 @@
     <h1 class="product-title">Tripod Ergo Black Pearl</h1>
     <p class="product-short">Shibari Rope Suspension Bondage Rig "Ergo tripod"</p>
 
-    <img src="../Portfolio/f03_Rig1.jpg" class="product-img zoomable" alt="Ergo tripod preview" />
+    <!-- Gallery 1: Product photos -->
+    <div class="main-gallery" id="gallery-product">
+      <div class="gallery-main">
+        <button class="gallery-arrow gallery-prev" data-gallery="product">&#8249;</button>
+        <img class="gallery-main-img" id="pg-main" src="../Portfolio/f03_Rig1.jpg" alt="Ergo tripod" />
+        <button class="gallery-arrow gallery-next" data-gallery="product">&#8250;</button>
+      </div>
+      <div class="gallery-thumbs" id="pg-thumbs">
+        <img class="gallery-thumb active" src="../Portfolio/f03_Rig1.jpg" alt="Preview" data-index="0" />
+        <img class="gallery-thumb" src="../Portfolio/Tripod bag.jpg" alt="Bag" data-index="1" />
+        <img class="gallery-thumb" src="../Portfolio/Tripode_details1.jpg" alt="Detail 1" data-index="2" />
+        <img class="gallery-thumb" src="../Portfolio/Tripode_details2.jpg" alt="Detail 2" data-index="3" />
+        <img class="gallery-thumb" src="../Portfolio/Tripode_details3.jpg" alt="Detail 3" data-index="4" />
+        <img class="gallery-thumb" src="../Portfolio/Tripode_details4.jpg" alt="Detail 4" data-index="5" />
+        <img class="gallery-thumb" src="../Portfolio/Tripode_details5.jpg" alt="Detail 5" data-index="6" />
+        <img class="gallery-thumb" src="../Portfolio/Tripode_details6.jpg" alt="Detail 6" data-index="7" />
+        <img class="gallery-thumb" src="../Portfolio/Tripode_details7.jpg" alt="Detail 7" data-index="8" />
+        <img class="gallery-thumb" src="../Portfolio/Tripode_details8.jpg" alt="Detail 8" data-index="9" />
+      </div>
+    </div>
 
     <div class="product-body">
       <p>Ergo tripod (design with bent legs)</p>
@@ -146,28 +166,21 @@
       </ul>
     </div>
 
-    <!-- Bag photo -->
-    <img src="../Portfolio/Tripod bag.jpg" class="product-img zoomable" alt="Tripod bag" />
-
-    <!-- Detail photos grid -->
-    <div class="product-images">
-      <img src="../Portfolio/Tripode_details1.jpg" class="product-img zoomable" alt="Detail 1" />
-      <img src="../Portfolio/Tripode_details2.jpg" class="product-img zoomable" alt="Detail 2" />
-      <img src="../Portfolio/Tripode_details3.jpg" class="product-img zoomable" alt="Detail 3" />
-      <img src="../Portfolio/Tripode_details4.jpg" class="product-img zoomable" alt="Detail 4" />
-      <img src="../Portfolio/Tripode_details5.jpg" class="product-img zoomable" alt="Detail 5" />
-      <img src="../Portfolio/Tripode_details6.jpg" class="product-img zoomable" alt="Detail 6" />
-      <img src="../Portfolio/Tripode_details7.jpg" class="product-img zoomable" alt="Detail 7" />
-      <img src="../Portfolio/Tripode_details8.jpg" class="product-img zoomable" alt="Detail 8" />
-    </div>
-
+    <!-- Gallery 2: Technical Documentation -->
     <h3 style="font-family: var(--font-serif); font-size: 1.1rem; font-weight: normal; color: var(--color-dark); margin: 2rem 0 1rem;">Technical Documentation</h3>
-    <div class="product-images">
-      <img src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_1_Dimensions of the tripod.jpg" class="product-img zoomable" alt="Dimensions" />
-      <img src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_2_Assembling1.jpg" class="product-img zoomable" alt="Assembling 1" />
-      <img src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_3_Assembling2.jpg" class="product-img zoomable" alt="Assembling 2" />
-      <img src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_4_Installation1.jpg" class="product-img zoomable" alt="Installation 1" />
-      <img src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_5_Installation2.jpg" class="product-img zoomable" alt="Installation 2" />
+    <div class="main-gallery" id="gallery-tech">
+      <div class="gallery-main">
+        <button class="gallery-arrow gallery-prev" data-gallery="tech">&#8249;</button>
+        <img class="gallery-main-img" id="tg-main" src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_1_Dimensions of the tripod.jpg" alt="Dimensions" />
+        <button class="gallery-arrow gallery-next" data-gallery="tech">&#8250;</button>
+      </div>
+      <div class="gallery-thumbs" id="tg-thumbs">
+        <img class="gallery-thumb active" src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_1_Dimensions of the tripod.jpg" alt="Dimensions" data-index="0" />
+        <img class="gallery-thumb" src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_2_Assembling1.jpg" alt="Assembling 1" data-index="1" />
+        <img class="gallery-thumb" src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_3_Assembling2.jpg" alt="Assembling 2" data-index="2" />
+        <img class="gallery-thumb" src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_4_Installation1.jpg" alt="Installation 1" data-index="3" />
+        <img class="gallery-thumb" src="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13_5_Installation2.jpg" alt="Installation 2" data-index="4" />
+      </div>
     </div>
 
     <a class="download-btn" href="../Portfolio/Ergo Tripod Dragon.Kinbaku 2026_04_13.pdf" download>⬇ Download Technical Documentation</a>
@@ -195,14 +208,7 @@
 
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
-    document.querySelectorAll('.zoomable').forEach(img => {
-      img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      });
-    });
+
     const closeLightbox = () => {
       lightbox.classList.remove('open');
       document.body.style.overflow = '';
@@ -210,6 +216,30 @@
     document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
     lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    function initGallery(mainImgId, thumbsId, prevBtn, nextBtn) {
+      const mainImg = document.getElementById(mainImgId);
+      const thumbs = [...document.querySelectorAll('#' + thumbsId + ' .gallery-thumb')];
+      if (!mainImg || !thumbs.length) return;
+      let current = 0;
+      function showSlide(idx) {
+        current = (idx + thumbs.length) % thumbs.length;
+        mainImg.src = thumbs[current].src;
+        thumbs.forEach((t, i) => t.classList.toggle('active', i === current));
+        thumbs[current].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+      thumbs.forEach((t, i) => t.addEventListener('click', () => showSlide(i)));
+      document.querySelector(prevBtn).addEventListener('click', () => showSlide(current - 1));
+      document.querySelector(nextBtn).addEventListener('click', () => showSlide(current + 1));
+      mainImg.addEventListener('click', () => {
+        lightboxImg.src = mainImg.src;
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    initGallery('pg-main', 'pg-thumbs', '[data-gallery="product"].gallery-prev', '[data-gallery="product"].gallery-next');
+    initGallery('tg-main', 'tg-thumbs', '[data-gallery="tech"].gallery-prev', '[data-gallery="tech"].gallery-next');
   </script>
 
 </body>
