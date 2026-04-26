@@ -61,13 +61,18 @@
   <section id="gallery" class="fade-in">
     <p class="section-label">Portfolio</p>
     <h2 class="section-title">Our Works</h2>
-    <div class="gallery-grid">
-
-      <div class="gallery-item"><img src="Portfolio/f1_Rig1.jpg" alt="Dragon.Kinbaku Rig 1" /></div>
-      <div class="gallery-item"><img src="Portfolio/Tripode_Tan.png" alt="Dragon.Kinbaku Tripode Tan" /></div>
-      <div class="gallery-item"><img src="Portfolio/FDP 2026_02_14-73.jpg" alt="Dragon.Kinbaku FDP 1" /></div>
-      <div class="gallery-item"><img src="Portfolio/FDPDisco_0267.jpg" alt="Dragon.Kinbaku FDP 2" /></div>
-
+    <div class="main-gallery">
+      <div class="gallery-main">
+        <button class="gallery-arrow gallery-prev" id="mg-prev">&#8249;</button>
+        <img class="gallery-main-img" id="mg-main" src="Portfolio/f1_Rig1.jpg" alt="Dragon.Kinbaku" />
+        <button class="gallery-arrow gallery-next" id="mg-next">&#8250;</button>
+      </div>
+      <div class="gallery-thumbs" id="mg-thumbs">
+        <img class="gallery-thumb active" src="Portfolio/f1_Rig1.jpg" alt="" data-index="0" />
+        <img class="gallery-thumb" src="Portfolio/Tripode_Tan.png" alt="" data-index="1" />
+        <img class="gallery-thumb" src="Portfolio/FDP 2026_02_14-73.jpg" alt="" data-index="2" />
+        <img class="gallery-thumb" src="Portfolio/FDPDisco_0267.jpg" alt="" data-index="3" />
+      </div>
     </div>
   </section>
 
@@ -224,15 +229,27 @@
       if (e.target === modalOverlay) closeModal();
     });
 
-    document.querySelectorAll('.gallery-item img').forEach(img => {
-      img.style.cursor = 'pointer';
-      img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
+    // Main gallery (stilts-style)
+    (function() {
+      const thumbs = [...document.querySelectorAll('#mg-thumbs .gallery-thumb')];
+      const mainImg = document.getElementById('mg-main');
+      if (!mainImg) return;
+      let current = 0;
+      function showSlide(idx) {
+        current = (idx + thumbs.length) % thumbs.length;
+        mainImg.src = thumbs[current].src;
+        thumbs.forEach((t, i) => t.classList.toggle('active', i === current));
+        thumbs[current].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+      thumbs.forEach((t, i) => t.addEventListener('click', () => showSlide(i)));
+      document.getElementById('mg-prev').addEventListener('click', () => showSlide(current - 1));
+      document.getElementById('mg-next').addEventListener('click', () => showSlide(current + 1));
+      mainImg.addEventListener('click', () => {
+        lightboxImg.src = mainImg.src;
         lightbox.classList.add('open');
         document.body.style.overflow = 'hidden';
       });
-    });
+    })();
 
     const closeLightbox = () => {
       lightbox.classList.remove('open');
